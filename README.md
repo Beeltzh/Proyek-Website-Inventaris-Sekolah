@@ -4,7 +4,7 @@ Aplikasi berbasis web menggunakan **Laravel 12** dan **MySQL** untuk mengelola p
 
 ---
 
-## 👥 Role & Hak Akses Pengguna
+ Role & Hak Akses Pengguna
 
 Sistem ini mendukung dua *role* utama dengan tampilan menu dan hak akses berbeda sesuai perannya:
 
@@ -24,7 +24,7 @@ Sistem ini mendukung dua *role* utama dengan tampilan menu dan hak akses berbeda
 
 ---
 
-## 🔑 Kredensial Akun Testing (Seeder)
+ Kredensial Akun Testing (Seeder)
 
 Seluruh akun *seeder* menggunakan kata sandi yang mudah diingat: **`password123`** (juga tersedia tombol *1-Click Demo Login* pada halaman `/login`).
 
@@ -38,7 +38,7 @@ Seluruh akun *seeder* menggunakan kata sandi yang mudah diingat: **`password123`
 
 ---
 
-## 🗄️ Struktur Entitas / Tabel Database
+ Struktur Entitas / Tabel Database
 
 | Nama Tabel | Model | Seeder | Fungsi |
 | :--- | :--- | :--- | :--- |
@@ -51,7 +51,7 @@ Seluruh akun *seeder* menggunakan kata sandi yang mudah diingat: **`password123`
 
 ---
 
-## ⚡ Optimasi Query & Keamanan Sistem
+ Optimasi Query & Keamanan Sistem
 
 1. **Pencegahan N+1 Query Problem**:
    - Menerapkan *Eager Loading* (`with(['category', 'user', 'approver', 'returnLog'])`) pada seluruh query daftar barang, peminjaman, log pengembalian, dan jejak audit.
@@ -73,7 +73,7 @@ Seluruh akun *seeder* menggunakan kata sandi yang mudah diingat: **`password123`
 
 ---
 
-## ✨ Standar Konvensi & Kualitas Proyek (Laravel 12)
+ Standar Konvensi & Kualitas Proyek (Laravel 12)
 
 - **Konvensi Penamaan Bahasa Inggris**: Tabel *plural `snake_case`* (`users`, `categories`, `items`, `loans`, `return_logs`, `activity_logs`), Model *singular `PascalCase`* (`User`, `Category`, `Item`, `Loan`, `ReturnLog`, `ActivityLog`), Controller berakhiran `Controller`, dan *view* Blade terkelompok per modul.
 - **Laravel Breeze Authentication**: Mendukung fitur **Login**, **Register**, **Logout**, dan **Profile** (`routes/auth.php`, `AuthenticatedSessionController`, `RegisteredUserController`, `ProfileController`).
@@ -85,7 +85,7 @@ Seluruh akun *seeder* menggunakan kata sandi yang mudah diingat: **`password123`
 
 ---
 
-## 🚀 Panduan Instalasi & Menjalankan Proyek
+ Panduan Instalasi & Menjalankan Proyek
 
 1. **Persiapan Dependensi & Environment**
    ```bash
